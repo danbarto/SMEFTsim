@@ -2,7 +2,7 @@
 # Mathematica version: 12.1.0 for Linux x86 (64-bit) (March 18, 2020)
 # Date: Tue 18 Aug 2020 15:03:49
 
-
+import configuration
 
 from object_library import all_parameters, Parameter
 
@@ -2016,6 +2016,12 @@ G = Parameter(name = 'G',
               type = 'real',
               value = '2*cmath.sqrt(aS)*cmath.sqrt(cmath.pi)',
               texname = 'G')
+
+Gstrong = Parameter(name = 'Gstrong',
+                    nature = 'internal',
+                    type = 'real',
+                    value = 'G' if configuration.norm_chromo_gs else '1.',
+                    texname = '\\text{Gstrong}')
 
 sth2 = Parameter(name = 'sth2',
                  nature = 'internal',
