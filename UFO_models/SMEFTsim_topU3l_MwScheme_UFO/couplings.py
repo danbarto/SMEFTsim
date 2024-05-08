@@ -399,11 +399,11 @@ GC_97 = Coupling(name = 'GC_97',
                  order = {'NP':1,'NPcte':1,'QED':2})
 
 GC_98 = Coupling(name = 'GC_98',
-                 value = '-(ctGIm/(LambdaSMEFT**2*cmath.sqrt(2)))',
+                 value = '-(ctGIm*Gstrong/(LambdaSMEFT**2*cmath.sqrt(2)))',
                  order = {'NP':1,'NPcpv':1,'NPctG':1,'QED':2, 'QCD':0+conf.QCD_inc})
 
 GC_99 = Coupling(name = 'GC_99',
-                 value = '(ctGRe*complex(0,1))/(LambdaSMEFT**2*cmath.sqrt(2))',
+                 value = '(ctGRe*Gstrong*complex(0,1))/(LambdaSMEFT**2*cmath.sqrt(2))',
                  order = {'NP':1,'NPctG':1,'QED':2, 'QCD':0+conf.QCD_inc})
 
 GC_100 = Coupling(name = 'GC_100',
@@ -607,11 +607,11 @@ GC_149 = Coupling(name = 'GC_149',
                   order = {'NP':1,'NPcHGtil':1,'NPcpv':1,'QCD':1,'QED':2})
 
 GC_150 = Coupling(name = 'GC_150',
-                  value = '(ctGIm*complex(0,1)*G)/(LambdaSMEFT**2*cmath.sqrt(2))',
+                  value = '(ctGIm*Gstrong*complex(0,1)*G)/(LambdaSMEFT**2*cmath.sqrt(2))',
                   order = {'NP':1,'NPcpv':1,'NPctG':1,'QCD':1+conf.QCD_inc,'QED':2})
 
 GC_151 = Coupling(name = 'GC_151',
-                  value = '(ctGRe*G)/(LambdaSMEFT**2*cmath.sqrt(2))',
+                  value = '(ctGRe*Gstrong*G)/(LambdaSMEFT**2*cmath.sqrt(2))',
                   order = {'NP':1,'NPctG':1,'QCD':1+conf.QCD_inc,'QED':2})
 
 GC_152 = Coupling(name = 'GC_152',
@@ -1411,11 +1411,11 @@ GC_350 = Coupling(name = 'GC_350',
                   order = {'NP':1,'NPcHWtil':1,'NPcpv':1,'QED':1})
 
 GC_351 = Coupling(name = 'GC_351',
-                  value = '-((ctGIm*vevhat)/(LambdaSMEFT**2*cmath.sqrt(2)))',
+                  value = '-((ctGIm*Gstrong*vevhat)/(LambdaSMEFT**2*cmath.sqrt(2)))',
                   order = {'NP':1,'NPcpv':1,'NPctG':1,'QED':1, 'QCD':0+conf.QCD_inc})
 
 GC_352 = Coupling(name = 'GC_352',
-                  value = '(ctGRe*complex(0,1)*vevhat)/(LambdaSMEFT**2*cmath.sqrt(2))',
+                  value = '(ctGRe*Gstrong*complex(0,1)*vevhat)/(LambdaSMEFT**2*cmath.sqrt(2))',
                   order = {'NP':1,'NPctG':1,'QED':1, 'QCD':0+conf.QCD_inc})
 
 GC_353 = Coupling(name = 'GC_353',
@@ -1547,11 +1547,11 @@ GC_384 = Coupling(name = 'GC_384',
                   order = {'NP':1,'NPcHGtil':1,'NPcpv':1,'QCD':1,'QED':1})
 
 GC_385 = Coupling(name = 'GC_385',
-                  value = '(ctGIm*complex(0,1)*G*vevhat)/(LambdaSMEFT**2*cmath.sqrt(2))',
+                  value = '(ctGIm*Gstrong*complex(0,1)*G*vevhat)/(LambdaSMEFT**2*cmath.sqrt(2))',
                   order = {'NP':1,'NPcpv':1,'NPctG':1,'QCD':1+conf.QCD_inc,'QED':1})
 
 GC_386 = Coupling(name = 'GC_386',
-                  value = '(ctGRe*G*vevhat)/(LambdaSMEFT**2*cmath.sqrt(2))',
+                  value = '(ctGRe*Gstrong*G*vevhat)/(LambdaSMEFT**2*cmath.sqrt(2))',
                   order = {'NP':1,'NPctG':1,'QCD':1+conf.QCD_inc,'QED':1})
 
 GC_387 = Coupling(name = 'GC_387',
